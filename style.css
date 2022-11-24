@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   box-sizing: border-box;
+}
+body{
+   font-family: 'PT Sans', sans-serif;
+   background: linear-gradient(#4958FA, #20CF4D);
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   min-height: 100vh;
+}
+.container{
+   width: 400px;
+   padding: 5px;
+}
+.container h3{
+   padding: 10px;
+   text-align: center;
+   color: #fff;
+}
+
+.wrapper{
+   margin-top: 25px;
+   width: 100%;
+   padding: 10px;
+   height: auto;
+   background-color: #fff;
+   border-radius: 5px;
+}
+form{
+   display: flex;
+   align-items: center;
+}
+form .at{
+   font-size: 20px;
+   margin-right: 6px;
+   color:#3543E0;
+}
+form input{
+   width: 90%;
+   height: 50px;
+   padding: 5px;
+   outline: none;
+   font-size: 18px;
+   border: 1px solid #CACACB;
+   border-radius: 5px;
+   font-family: 'PT Sans', sans-serif;
+}
+input:focus{
+   border: 2px solid blue;
+}
+form input:valid ~ span:last-child{
+   color: #3543E0;
+}
+form span:last-child{
+   margin-left: 6px;
+   font-size: 20px;
+   font-weight: bold;
+   color: #CBCBCB;
+}
+p{
+   display: none;
+   margin-top: 10px;
+   text-align: center;
+   font-size: 16px;
+   color: red;
+   transition: 0.3s ease;
+}
+.appear{
+   display: block;
+}
